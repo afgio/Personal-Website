@@ -1,0 +1,40 @@
+@media (min-width: 20px) {
+
+    .custom-shadow {
+        transition: box-shadow .3s;
+    }
+
+    .custom-shadow:hover {
+        box-shadow: 0 0 11px rgba(33, 33, 33, 0.443);
+    }
+
+}
+
+.icon {
+    font-size: 1.5em;
+}
+
+.title-class {
+    /* padding-left: 9px; */
+    background-image: linear-gradient(300deg, #36beff, #733ff1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.braces {
+    padding: 10px;
+}
+
+.teal {
+    background-color: #e3f2fd;
+}
+
+.form-shadow {
+    box-shadow: 7px 7px 0px -2px rgba(155, 193, 255, 0.59);
+    -webkit-box-shadow: 7px 7px 0px -2px rgba(155, 193, 255, 0.59);
+    -moz-box-shadow: 7px 7px 0px -2px rgba(155, 193, 255, 0.59);
+}
+
+.form-background {
+    background-color: #fef6f1;
+}
