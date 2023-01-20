@@ -41,3 +41,12 @@
     .form-background {
         background-color: #fef6f1;
     }
+
+    .google-font {
+        font-family: 'Inconsolata', monospace;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .tab:hover {
+        color: white;
+    }
