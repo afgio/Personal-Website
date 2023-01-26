@@ -42,9 +42,12 @@
         background-color: #fef6f1;
     }
 
-    .google-font {
-        font-family: 'Inconsolata', monospace;
+    .RobotoSlab {
         font-family: 'Roboto Slab', serif;
+    }
+
+    .VarelaRound {
+        font-family: 'Varela Round', sans-serif;
     }
 
     .tab:hover {
@@ -67,6 +70,14 @@
 
     .green {
         color: #4bb71b;
+    }
+
+    .appBio {
+        text-align: justify;
+    }
+
+    .Manrope {
+        font-family: 'Manrope', sans-serif;
     }
 
     .checkmark {

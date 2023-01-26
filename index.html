@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="images\favicon.ico">
         <title>Antonio Giordano</title>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,11 +13,10 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Roboto+Slab:wght@200;400&display=swap');
-        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Quicksand&family=Roboto+Slab:wght@200;400&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Manrope:wght@200;400&family=Quicksand&family=Roboto+Slab:wght@200;400&family=Varela+Round&display=swap"
             rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +33,7 @@
             <div class="container-xl">
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
-                    <i class="bi bi-braces braces h4 align-middle"></i><text class="google-font h5 align-middle">Antonio
+                    <i class="bi bi-braces braces h4 align-middle"></i><text class="RobotoSlab h5 align-middle">Antonio
                         Giordano</text>
                 </a>
                 <!-- Navbar toggle -->
@@ -92,7 +91,7 @@
                 </div>
                 <div class=" overflow-hidden" style="max-height: 30vh;">
                     <div class="container px-5">
-                        <img src="Snap.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Generic code"
+                        <img src="images\Snap.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Generic code"
                             width="700" height="500" loading="lazy">
                     </div>
                 </div>
@@ -104,52 +103,78 @@
             <section class="teal border-bottom" id="projects">
                 <div class="container px-4 py-5" id="custom-cards">
                     <h2 class="pb-2 border-bottom pt-5 border border-0">🏗 Projects</h2>
-
                     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                         <div class="col">
                             <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 custom-shadow"
                                 data-bs-toggle="modal" data-bs-target="#modal1"
                                 style="background-image: url('unsplash-photo-1.jpg');">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Jeopardy! Game</h3>
-                                    <div class="d-flex flex-row list-unstyled mt-auto pb-2">
+                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Jeopardy! Quiz</h3>
+                                    <ul class="d-flex flex-row list-unstyled mt-auto pb-2">
                                         <div class="p-2">
                                             <img src="https://github.com/twbs.png" alt="Bootstrap logo" width="32"
-                                                height="32" class="rounded-circle border border-white">
+                                                alt="axios logo" width="32" height="32"
+                                                class="rounded-circle border border-white bg-white"
+                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-title="Bootstrap">
                                         </div>
                                         <div class="p-2">
-                                            <img src="https://avatars.githubusercontent.com/u/32372333?s=280&v=4"
+                                            <img src="https://avatars.githubusercontent.com/u/32372333?s=280&amp;v=4"
                                                 alt="axios logo" width="32" height="32"
-                                                class="rounded-circle border border-white bg-white">
+                                                class="rounded-circle border border-white bg-white"
+                                                data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Axios">
                                         </div>
-                                    </div>
                                 </div>
-                                <div class="modal fade" id="modal1" tabindex="-1" role="dialog"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                <button type="button" class="btn-close" data-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                ...
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
-                                            </div>
+                            </div>
+                            <div class="modal fade" id="modal1" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header justify-content-center">
+                                            <h5 class="modal-title text-dark fs-2 RobotoSlab" id="exampleModalLabel">
+                                                Jeopardy!
+                                                Quiz</h5>
+                                        </div>
+                                        <div class="modal-body px-4 pb-0 pt-0">
+                                            <img src="images\Jeopardy.svg" class="img-fluid"></img>
+                                        </div>
+                                        <div class="container-sm px-4 pb-2">
+                                            <p class="fs-6 text-dark text-justify appBio manrope">This app uses
+                                                Axios
+                                                to make
+                                                API
+                                                calls to the
+                                                <a href="https://jservice.io/" target="_blank">jservice API</a>. When
+                                                users click the
+                                                "New
+                                                Question"
+                                                button, a GET request is made via an Axios call to the API which
+                                                returns a JSON object containing a question and other
+                                                relevant data such as the correct answer as well as the question's
+                                                point value. This data is then displayed to the
+                                                player to simulate a Jeopardy! quiz. Test your skills and set a new
+                                                high score!
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a type="button" target="_blank"
+                                                href="https://github.com/afgio/Jeopardy-Quiz"
+                                                class="btn btn-outline-primary btn-lg" data-dismiss="modal">Repo</a>
+                                            <a type="button" target="_blank" href="https://jeopardy-quiz.vercel.app/"
+                                                class="btn btn-outline-primary btn-lg">Demo</a>
+                                            <a type="button" class="btn btn-outline-dark btn-lg" data-bs-dismiss="modal"
+                                                aria-label="Close">Close</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
+
+
 
                         <div class="col">
                             <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 custom-shadow"
+                                data-bs-toggle="modal" data-bs-target="#modal2"
                                 style="background-image: url('unsplash-photo-2.jpg');">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                                     <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"> Personal Website
@@ -157,15 +182,49 @@
                                     <ul class="d-flex list-unstyled mt-auto">
                                         <li class="me-auto">
                                             <img src="https://github.com/twbs.png" alt="Bootstrap logo" width="32"
-                                                height="32" class="rounded-circle border border-white">
+                                                height="32" class="rounded-circle border border-white"
+                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-title="Bootstrap">
                                     </ul>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal2" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header justify-content-center">
+                                            <h5 class="modal-title text-dark fs-2 RobotoSlab" id="exampleModalLabel">
+                                                Personal Website</h5>
+                                        </div>
+                                        <div class="modal-body px-4 pb-0 pt-0">
+                                            <img src="images\Personal_Website.svg" class="img-fluid"></img>
+                                        </div>
+                                        <div class="container-sm px-4 pb-2">
+                                            <p class="fs-5 text-dark text-justify appBio manrope">My responsive personal
+                                                website is largely
+                                                designed using Bootstrap's customizable classes. It includes a wide
+                                                range of advanced components such as Scrollspy, Tooltips, Modals, and
+                                                Cards. Additionally, I use several plugins such as <a
+                                                    href="https://www.typeitjs.com/build-your-own/"
+                                                    target="_blank">TypeIt's</a>
+                                                typewriter effect and <a href="">EmailJS</a> as an email service.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a type="button" target="_blank"
+                                                href="https://github.com/afgio/Personal-Website"
+                                                class="btn btn-outline-primary btn-lg" data-dismiss="modal">Repo</a>
+                                            <a type="button" class="btn btn-outline-dark btn-lg" data-bs-dismiss="modal"
+                                                aria-label="Close">Close</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 custom-shadow"
-                                style="background-image: url('unsplash-photo-3.jpg');">
+                                style="background-image: url('unsplash-photo-3.jpg');" data-bs-toggle="modal"
+                                data-bs-target="#modal3">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                                     <div class="d-flex flex-row list-unstyled mt-auto pb-2">
                                         <div class="p-2">
@@ -179,24 +238,71 @@
                                         <div class="p-2">
                                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png?20220125121207"
                                                 alt="React logo" width="32" height="32"
-                                                class="rounded-circle border border-white bg-white">
+                                                class="rounded-circle border border-white bg-white"
+                                                data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="React">
                                         </div>
                                         <div class="p-2">
                                             <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg"
                                                 alt="Next.js logo" width="32" height="32"
-                                                class="rounded-circle border border-white bg-white">
+                                                class="rounded-circle border border-white bg-white"
+                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-title="Next.js">
                                         </div>
                                         <div class="p-2">
                                             <img src="https://res.cloudinary.com/divzjiip8/image/upload/v1624392472/logos/ethers_blue.png"
                                                 alt="Ethers.js logo" width="32" height="32"
-                                                class="rounded-circle border border-white bg-white">
+                                                class="rounded-circle border border-white bg-white"
+                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-title="Ethers.js">
                                         </div>
                                         <div class="p-2">
                                             <img src="https://pbs.twimg.com/profile_images/1510010252787212290/Kuiapnmy_400x400.jpg"
                                                 alt="Unlock Protocol logo" width="32" height="32"
-                                                class="rounded-circle border border-white bg-white">
+                                                class="rounded-circle border border-white bg-white"
+                                                data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Unlock">
                                         </div>
                                     </ul>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal3" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header justify-content-center">
+                                            <h5 class="modal-title text-dark fs-2 RobotoSlab" id="exampleModalLabel">
+                                                Alexandria</h5>
+                                        </div>
+                                        <div class="modal-body px-4 pb-0 pt-0">
+                                            <div class="container d-flex justify-content-center">
+                                                <img src="images\Alexandria_Token.png"
+                                                    class="img-fluid rounded m-3 border border-secondary"></img>
+                                            </div>
+                                        </div>
+                                        <div class="container-sm px-4">
+                                            <p class="fs-6 text-dark text-justify appBio manrope">
+                                                Alexandria is an onchain library for lending and borrowing content.
+                                                Users borrow NFTs which permit access to books and
+                                                journals. Alexandria
+                                                contracts
+                                                allow anyone to borrow books for however long they like (assuming
+                                                sufficient funds) whilst rewarding authors
+                                                royalties from payments. We help authors ensure they get paid each time
+                                                their books are read.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a type="button" target="_blank"
+                                                href="https://github.com/manasbir/alexandria"
+                                                class="btn btn-outline-primary btn-lg" data-dismiss="modal">Repo</a>
+                                            <a type="button" target="_blank" href="https://alexandria-omega.vercel.app/"
+                                                class="btn btn-outline-primary btn-lg" data-dismiss="modal">Demo</a>
+                                            <a ta type="button" target="_blank"
+                                                href="https://ethglobal.com/showcase/alexandria-3db0q"
+                                                class="btn btn-outline-warning btn-lg"
+                                                data-dismiss="modal">EthGlobal</a>
+                                            <a type="button" class="btn btn-outline-dark btn-lg" data-bs-dismiss="modal"
+                                                aria-label="Close">Close</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -214,6 +320,7 @@
                     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                         <div class="col">
                             <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 custom-shadow"
+                                data-bs-toggle="modal" data-bs-target="#modal4"
                                 style="background-image: url('unsplash-photo-1.jpg');">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                                     <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Solidity Docs Page</h3>
@@ -221,29 +328,123 @@
                                         <li class="me-auto">
                                             <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_4118d267458b8577a8b7793590ed6de7/prismjs.png"
                                                 alt="Prism.js logo" width="32" height="32"
-                                                class="rounded-circle border border-white">
+                                                class="rounded-circle border border-white" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-title="Prism.js">
                                         </li>
                                     </ul>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal4" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header justify-content-center">
+                                            <h5 class="modal-title text-dark fs-2 RobotoSlab" id="exampleModalLabel">
+                                                Solidity Docs Page</h5>
+                                        </div>
+                                        <div class="modal-body px-4 pb-0 pt-0">
+                                            <div class="container d-flex justify-content-center">
+                                                <img src="images\Sol_Docs_Page.svg" class="img-fluid rounded m-3"></img>
+                                            </div>
+                                        </div>
+                                        <div class="container-sm px-4">
+                                            <p class="fs-6 text-dark text-justify appBio manrope">This responsive
+                                                design, inspired
+                                                by the Solidity Documentation website, features several core concepts of
+                                                web design including semantic html, custom CSS media queries, and navbar
+                                                position. Additionally, the Solidity code snippets are styled using <a
+                                                    href="https://prismjs.com/" target="_blank">Prism's</a> syntax
+                                                highlighter.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a type="button" target="_blank"
+                                                href="https://codepen.io/afgio/pen/WNyOmgP?editors=1100"
+                                                class="btn btn-outline-primary btn-lg" data-dismiss="modal">Codepen</a>
+                                            <a type="button" class="btn btn-outline-dark btn-lg" data-bs-dismiss="modal"
+                                                aria-label="Close">Close</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 custom-shadow"
+                                data-bs-toggle="modal" data-bs-target="#modal5"
                                 style="background-image: url('unsplash-photo-2.jpg');">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                                     <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Crypto Form
                                     </h3>
                                 </div>
                             </div>
+                            <div class="modal fade" id="modal5" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header justify-content-center">
+                                            <h5 class="modal-title text-dark fs-2 RobotoSlab" id="exampleModalLabel">
+                                                Crypto Form</h5>
+                                        </div>
+                                        <div class="modal-body px-4 pb-0 pt-0">
+                                            <div class="container d-flex justify-content-center">
+                                                <img src="images\crypto_survey.svg" class="img-fluid rounded m-3"></img>
+                                            </div>
+                                        </div>
+                                        <div class="container-sm px-4">
+                                            <p class="fs-5 text-dark text-justify appBio manrope">A responsive form
+                                                whose design includes flex, form validation, a color gradient, CSS
+                                                pseudo-elements, among others.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a type="button" target="_blank" href="https://codepen.io/afgio/pen/BaVZGvG"
+                                                class="btn btn-outline-primary btn-lg" data-dismiss="modal">Codepen</a>
+                                            <a type="button" class="btn btn-outline-dark btn-lg" data-bs-dismiss="modal"
+                                                aria-label="Close">Close</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="col">
                             <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 custom-shadow"
+                                data-bs-toggle="modal" data-bs-target="#modal6"
                                 style="background-image: url('unsplash-photo-3.jpg');">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                                     <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Hardware Wallet Landing Page
                                     </h3>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal6" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header justify-content-center">
+                                            <h5 class="modal-title text-dark text-center fs-2 RobotoSlab"
+                                                id="exampleModalLabel">
+                                                Hardware Wallet Landing Page
+                                            </h5>
+                                        </div>
+                                        <div class="modal-body px-4 pb-0 pt-0">
+                                            <div class="container d-flex justify-content-center">
+                                                <img src="images\Hardware_Wallet.svg"
+                                                    class="img-fluid rounded m-3"></img>
+                                            </div>
+                                        </div>
+                                        <div class="container-sm px-4">
+                                            <p class="fs-5 text-dark text-justify appBio manrope">A custom crypto
+                                                hardware
+                                                wallet webpage
+                                                whose design includes flex, color gradients, CSS
+                                                pseudo-elements, among others.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a type="button" target="_blank" href="https://codepen.io/afgio/pen/KKeqGNX"
+                                                class="btn btn-outline-primary btn-lg" data-dismiss="modal">Codepen</a>
+                                            <a type="button" class="btn btn-outline-dark btn-lg" data-bs-dismiss="modal"
+                                                aria-label="Close">Close</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -251,7 +452,7 @@
                 </div>
             </section>
 
-            <!-- START DESIGNS -->
+            <!-- End DESIGNS -->
             <!-- EMAIL FORM START -->
 
             <section id="contact">
@@ -442,6 +643,10 @@
                 crossorigin="anonymous"></script>
             <script src="validation.js"></script>
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script type="text/javascript">
+                const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+                const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+            </script>
         </div>
     </body>
 
